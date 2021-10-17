@@ -16,7 +16,8 @@ https://refactorizando.com/procesamiento-streams-spring-cloud-data-flow
 
 Our real time example is formed by three modules.
 
-![](Spring-Cloud-Stream.png)
+
+image::Spring-Cloud-Stream.png[]
 
 
 == Spring Cloud Stream Source ==
