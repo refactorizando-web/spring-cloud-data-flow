@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: sendProduct;
+      bindings:
+        sendProduct-out-0:
+          destination: product
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true

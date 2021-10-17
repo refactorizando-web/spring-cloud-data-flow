@@ -1,0 +1,23 @@
+= Spring Cloud Stream Source example =
+
+This is a simple example about how to use and work with spring cloud stream processor.
+
+This microservice is going to producer a message to a kafka broker. We use functional programming to send a message.
+
+If you want more information you can take a look into:
+https://refactorizando.com/procesamiento-streams-spring-cloud-data-flow
+
+== How does it work?
+
+To run this project you need run a kafka broker, you can use the image that we have attached to the root project.
+
+
+== How does it run?
+
+This a Spring Boot application, so to run it you can run the next command:
+
+      mvn spring-boot:run
+
+
+
+

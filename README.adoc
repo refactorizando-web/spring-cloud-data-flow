@@ -1,0 +1,49 @@
+= Spring cloud data flow stream example =
+
+== Introduction ==
+
+In this example about spring cloud data flow stream lets see the integration with this module of spring and
+how can use the different tools of this module to verify that everything is working well.
+
+Spring Cloud Data Flow is a cloud-native toolkit for building real-time data pipelines and batch processes. In this
+example we are going to focus in real time data.
+
+Spring Cloud Data Flow is ready to be used for a range of data processing use cases like simple import/export,
+ETL processing, event streaming, and predictive analytics.
+
+If you want more information you can take a look into:
+https://refactorizando.com/procesamiento-streams-spring-cloud-data-flow
+
+Our real time example is formed by three modules.
+
+![](Spring-Cloud-Stream.png)
+
+
+== Spring Cloud Stream Source ==
+
+This is going to be our producer. The producer generate a message and send it to kafka using functional programming.
+
+== Spring Cloud Stream Processor ==
+
+This service receive the message from kafka, then processed it and send it to kafka.
+
+== Spring Cloud Stream Sink ==
+
+This is the consumer in Spring Cloud Data Flow, it takes a message from kafka and do something with it.
+
+== What do We need to start with Spring Cloud Stream? ==
+
+To use Spring Cloud Data Flow and this example we are going to need a kafka broker that you can find in the docker-compose
+file:
+       docker-compose up -d
+
+and Spring Cloud Data Flow tools that you can find here https://dataflow.spring.io/docs/installation/local/manual/
+
+
+
+
+
+
+
+
+

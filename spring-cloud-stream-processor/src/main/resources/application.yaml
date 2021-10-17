@@ -1,0 +1,18 @@
+server:
+  port: 9002
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: productProcessor
+
+      bindings:
+        productProcessor-in-0:
+          destination: product
+        productProcessor-out-0:
+          destination: processed
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true

@@ -1,0 +1,17 @@
+server:
+  port: 9003
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: productConsumer;
+
+      bindings:
+        productConsumer-in-0:
+          destination: processed
+
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true
